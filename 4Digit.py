@@ -10,7 +10,16 @@ print("        \/  /_____/           ")
 print("")
 
 while done == 0:
-
+  
+  if len(str(num)) == 2:
+    num0 = 1
+  if len(str(num)) == 3:
+    num0 = 2
+  if len(str(num)) == 4:
+    num0 = 3
+  if num >= 9999:
+    done = 1
+	 
   if num0 == 0:
     with open('Digits.txt', 'a') as f:
       f.write("\n" + "000" +str(num))
@@ -28,13 +37,5 @@ while done == 0:
       f.write("\n" + str(num))
 
 
-  if len(str(num)) == 2:
-    num0 = 1
-  if len(str(num)) == 3:
-    num0 = 2
-  if len(str(num)) == 4:
-    num0 = 3
-  if num >= 9999:
-    done = 1
 
   num += 1
