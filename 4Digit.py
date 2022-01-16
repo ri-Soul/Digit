@@ -1,6 +1,6 @@
 num = 0
 done = 0
-num0 = 0
+num0 = "000"
 print("________  .__       .__  __   ")
 print("\______ \ |__| ____ |__|/  |_ ")
 print(" |    |  \|  |/ ___\|  \   __/")
@@ -12,30 +12,16 @@ print("")
 while done == 0:
   
   if len(str(num)) == 2:
-    num0 = 1
+    num0 = "00"
   if len(str(num)) == 3:
-    num0 = 2
+    num0 = "0"
   if len(str(num)) == 4:
-    num0 = 3
+    num0 = ""
   if num >= 9999:
     done = 1
 	 
-  if num0 == 0:
-    with open('Digits.txt', 'a') as f:
-      f.write("\n" + "000" +str(num))
-
-  elif num0 == 1:
-    with open('Digits.txt', 'a') as f:
-      f.write("\n" + "00" +str(num))
-
-  elif num0 == 2:
-    with open('Digits.txt', 'a') as f:
-      f.write("\n" + "0" +str(num))
-
-  else:
-    with open('Digits.txt', 'a') as f:
-      f.write("\n" + str(num))
-
-
+  
+  with open('Digits.txt', 'a') as f:
+    f.write("\n" + num0 +str(num))
 
   num += 1
