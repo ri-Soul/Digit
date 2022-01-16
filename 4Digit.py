@@ -7,6 +7,9 @@ print(" |    |  \|  |/ ___\|  \   __/")
 print(" |    `   \  / /_/  >  ||  |  ")
 print("/_______  /__\___  /|__||__|  ")
 print("        \/  /_____/           ")
+
+print("")
+print("Loading...")
 print("")
 
 while done == 0:
@@ -21,7 +24,9 @@ while done == 0:
     done = 1
 	 
   
-  with open('Digits.txt', 'a') as f:
+  with open('4Digits.txt', 'a') as f:
     f.write("\n" + num0 +str(num))
 
   num += 1
+ 
+print("Done!")
