@@ -11,13 +11,13 @@ print("")
 print("Loading...")
 print("")
 
+num_def = len(str(num))
 while True:
-  
-  if len(str(num)) == 2:
+  if num_def == 2:
     num0 = "00"
-  if len(str(num)) == 3:
+  if num_def == 3:
     num0 = "0"
-  if len(str(num)) == 4:
+  if num_def == 4:
     num0 = ""
   if num >= 9999:
     break
