@@ -12,7 +12,7 @@ print("")
 print("Loading...")
 print("")
 
-while done == 0:
+while True:
   
   if len(str(num)) == 2:
     num0 = "00"
@@ -21,7 +21,7 @@ while done == 0:
   if len(str(num)) == 4:
     num0 = ""
   if num >= 9999:
-    done = 1
+    break
 	 
   
   with open('4Digits.txt', 'a') as f:
