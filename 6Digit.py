@@ -12,7 +12,7 @@ print("")
 print("Loading...")
 print("")
 
-while done == 0:
+While True:
   
   if len(str(num)) == 2:
     num0 = "0000"
@@ -25,7 +25,7 @@ while done == 0:
   if len(str(num)) == 6:
     num0 = ""
   if num >= 999999:
-    done = 1
+    break
 	 
   
   with open('6Digits.txt', 'a') as f:
